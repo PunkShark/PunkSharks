@@ -1,0 +1,529 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    border-bottom: 1px solid rgb(224, 224, 224);
+    z-index: 10000000000;
+}
+.cover{
+    height: 280px;
+}
+.main{
+    max-width: 800px;
+}
+
+.profile{
+    transform: translateY(-50%);
+}
+
+.title{
+    font-weight: 800;
+}
+
+
+
+.widthMax{
+    max-width: 1400px;
+}
+
+.familyImage{
+    min-width: 300px;
+}
+
+.aboutText{
+    max-width: 900px;
+}
+
+
+.faq{
+  max-width: 1000px;
+  
+}
+.secondMaxWidth{
+  max-width: 1200px;
+}
+
+.contractWord{
+  border-right: 2px solid rgb(31, 31, 31);
+  padding-right: 10px;
+}
+
+.contractFlex{
+  gap: 10px;
+}
+
+.contractLink{
+padding-bottom: 2px;
+}
+
+
+.accordion {
+  background-color: #3b82f6;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+
+.accordion-btn {
+  padding: 24px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion-btn p {
+  margin-right: 2rem;
+}
+
+.accordion-btn p {
+  color: white;
+}
+
+.acordion-header-icon {
+  min-width: 36px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+
+  font-size: 1rem;
+
+  transition: all 0.2s ease;
+}
+
+
+
+
+.accordion-content {
+  padding: 24px 36px;
+  padding-top: 24px;
+  background-color: rgb(238, 238, 238);
+  transition: all 0.2s ease;
+}
+
+.accordion-body {
+  height: 200px;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 400px) {
+  .accordion-btn {
+    padding: 18px 1rem;
+  }
+  .accordion-content {
+    padding: 18px 1rem;
+    padding-bottom: 18px;
+  }
+
+.acordion-header-icon {
+  min-width: 30px;
+  min-height: 30px;
+}
+}
+
+
+.concatincated{
+  max-width:1000px;
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0 auto;
+  border: 2px solid rgb(75, 75, 75);
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+.concatincated p{
+  width: 100%;
+  margin: 0 auto;
+word-break: break-all;
+font-size: 13px;
+}
+
+
+.topCategoryGrid{
+  grid-template-columns: 130px 70px 1fr;
+}
+
+
+.mainCategoryGrid{
+  grid-template-columns: 130px 70px 1fr;
+
+}
+.sharkCategoryImage img{
+  transition: 0.1s;
+  max-width: 57px;
+  min-width: 57px;
+  image-rendering: pixelated;
+  width: 100%;
+  
+}
+
+@media (max-width:1400px){
+  .sharkCategoryImage img{
+    max-width: 54.6px;
+    min-width: 54.6px;
+  }
+  
+}
+.sharkCategoryImage:hover{
+  z-index: 100 !important;
+
+}
+
+.sharkCategoryImage:hover img{
+  transform: scale(2);
+}
+
+.categoryName{
+  font-size: 18px;
+}
+
+
+.provenenceRecord{
+  max-width: 820px;
+  width: 100%;
+  margin: 0 auto;
+}
+.provenceGrid{
+display: grid;
+grid-template-columns: 120px 1fr 130px 130px;
+  width: 100%;
+  gap: 20px;
+  padding-left: 5px;
+}
+
+.provenceGrid-1{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.534);
+}
+
+
+
+
+.provenceGrid-2{
+  border-bottom: 1px solid rgb(41, 41, 41);
+
+}
+
+
+
+.specs{
+  max-width: 1000px;
+}
+
+
+
+
+
+/* Responsive */
+
+@media (max-width:1084px){
+  .lgScreenNav{
+    gap: 50px !important;
+  }
+}
+
+
+@media (max-width:1212px){
+  .lgScreenBtn{
+    display: none;
+  }
+  .lgScreenNav{
+    display: none;
+  }
+  .burger-menu{
+    display: block !important;
+  }
+  .mobileMenu{
+    display: block !important;
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+   
+  }
+.mobileMenu nav i{
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  opacity: 0.7;
+  font-size: 33px;
+}
+  .mobileMenu .mmmb{
+    display: flex;
+    gap: 30px;
+  
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 30px;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.63);
+    flex-direction: column;
+  }
+  
+}
+
+.openMenu{
+  transform: translateY(0) !important;
+}
+
+
+@media (max-width:500px){
+  .mainTitle{
+    font-size: 44px !important;
+  }
+  .mainParagraph{
+    font-size: 15px;
+    opacity: 0.8;
+  }
+}
+
+
+@media (max-width:414px){
+  .mainTitle{
+    font-size: 38px !important;
+  }
+.openseaLogo{
+  display: none;
+}
+
+.topSection{
+  margin-top: 40px !important;
+}
+
+.banner{
+  height: 200px;
+}
+
+.sectionTitle{
+  font-size: 28px;
+  text-align: center;
+}
+
+.faqTitle{
+  margin-bottom: 50px;
+}
+}
+
+
+
+
+@media (max-width:352px){
+  .mainTitle{
+    font-size: 34px !important;
+  }
+
+}
+
+
+
+@media (max-width:318px){
+  .mainTitle{
+    line-height: 1.4;
+  }
+
+}
+
+
+
+
+@media (max-width:873px){
+  .statsGrid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .statsSecondGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width:533px){
+  .statsGrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+@media (max-width:1081px){
+  .largestSalesGrid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width:669px){
+  .largestSalesGrid{
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+@media (max-width:435px){
+  .largestSalesGrid{
+    gap: 20px;
+  }
+}
+
+
+
+@media (max-width:395px){
+  .largestSalesGrid{
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .largestSalesGrid img{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 500px){
+  .imagesContCategoriess{
+    padding: 10px 0 !important;
+  }
+}
+
+
+
+.concatincated::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.concatincated::-webkit-scrollbar-track {
+border-left: 1px solid rgb(184, 184, 184);
+
+
+}
+
+/* Handle */
+.concatincated::-webkit-scrollbar-thumb {
+  background: rgb(121, 121, 121); 
+  border-radius: 2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+/* Handle on hover */
+.concatincated::-webkit-scrollbar-thumb:hover {
+  background: #202020; 
+}
+
+
+
+
+/* @media (max-width:870px) {
+  .provenceGrid{
+    display: grid;
+    grid-template-columns: 140px 1fr 130px 130px;
+    width: 100%;
+    gap: 20px;
+    padding-left: 5px;
+
+    }
+
+    .provenenceRTitles{
+      font-size: 17px;
+    }
+    
+} */
+
+
+@media (max-width:770px){
+  
+  .provenceGrid{
+
+    min-width: 820px;
+
+  }
+  
+   .provenenceRecord{
+  
+    overflow-x: scroll !important;
+  }
+}
+
+
+@media (max-width:552px){
+  .contractLink{
+    word-break: break-all !important;
+
+  }
+}
+
+@media (max-width: 535px){
+  .contractWord{
+    font-size: 16px !important;
+  }
+}
+
+
+.fade{
+  background-image: linear-gradient(to bottom, transparent, white);
+transform: translateY(-180px);
+width: 100%;
+height: 100px;
+}
+
+
+.wholePageTransform{
+  transform: translateY(-110px);
+}
+
+
+
+
+
+
+.card:hover{
+  transform: translateY(-10px);
+  
+}
+
+
+
+.asd{
+  background-image: linear-gradient(to bottom, transparent, white);
+  width: 100%;
+  height: 100px;
+}
+
+.largestSalesParent{
+  background: rgb(239,238,255);
+  background: linear-gradient(273deg, rgba(239,238,255,1) 0%, rgba(170,200,255,1) 100%);
+}
+
+.homeParent{
+  background: rgb(239,238,255);
+  background: linear-gradient(273deg, rgba(239,238,255,1) 0%, rgba(170,200,255,1) 100%);
+}
